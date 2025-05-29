@@ -1,0 +1,39 @@
+# === 🔨 Build Artifacts ===
+build/
+*.obj
+*.exe
+*.dll
+*.lib
+*.pdb
+*.vcxproj*
+*.sln
+*.idb
+*.ipch
+
+# === 🧱 CMake ===
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# === 🧠 IDE Configurations ===
+.vscode/
+*.code-workspace
+
+# === 📂 OS-generated Files ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === 📝 Logs & Temporary Files ===
+*.log
+*.tmp
+
+# === 💡 Shaders & GL Loaders ===
+*.glslc
+*.spv
+
+# === 🚫 Backup or Editor Files ===
+*~
+*.swp
+*.bak

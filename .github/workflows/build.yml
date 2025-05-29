@@ -1,0 +1,24 @@
+name: build-debug
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code with submodules
+      uses: actions/checkout@v3
+      with:
+        submodules: recursive
+
+    - name: Set up CMake
+      uses: jwlawson/actions-setup-cmake@v1.13
+
+    - name: Configure CMake
+      run: cmake -B build -DCMAKE_BUILD_TYPE=Debug
+
+    - name: Build project
+      run: cmake --build build --config Debug

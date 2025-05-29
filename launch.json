@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug GndG Space Map",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/Debug/gndg3.0.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/build",
+      "environment": [],
+      "console": "externalTerminal",
+      "preLaunchTask": "build",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}
